@@ -4,15 +4,13 @@ import main.java.by.intensiveJava.Homework;
 
 public class TaskRun {
 
-    public TaskRun() {
-    }
-
-    ;
+    public TaskRun() {};
 
     public void allTaskRun() {
         runTaskTurnString();
         runTaskGetDistinctNumbers();
         runTaskFindSecondMaxElement();
+        runTaskLengthOfLastWord();
     }
 
     public void runTaskTurnString() {
@@ -37,7 +35,11 @@ public class TaskRun {
     }
 
     public void runTaskLengthOfLastWord() {
-
+        System.out.println("// Найти длину последнего слова в строке. В строке только буквы и пробелы.\n" +
+                           "// \"Hello world\" - 5\n" +
+                           "// \"    fly me    to the moon    \" - 4");
+        System.out.println(Homework.lengthOfLastWord("Hello world"));
+        System.out.println(Homework.lengthOfLastWord("    fly me    to the moon    "));
     }
 
     public void runTaskIsPalindrome(){

@@ -38,7 +38,9 @@ public class Homework {
     // "Hello world" - 5
     // "    fly me    to the moon    " - 4
     public static Integer lengthOfLastWord(String string) {
-        return null;
+        String[] arrWords = string.trim().split(" ");
+        String lastWord = arrWords[arrWords.length - 1].trim();
+        return lastWord.length();
     }
 
     // Определить, что строка является палиндромом
