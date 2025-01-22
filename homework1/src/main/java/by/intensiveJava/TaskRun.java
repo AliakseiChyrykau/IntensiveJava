@@ -1,16 +1,15 @@
 package main.java.by.intensiveJava;
 
-import main.java.by.intensiveJava.Homework;
-
 public class TaskRun {
 
-    public TaskRun() {};
+    public TaskRun() {}
 
     public void allTaskRun() {
         runTaskTurnString();
         runTaskGetDistinctNumbers();
         runTaskFindSecondMaxElement();
         runTaskLengthOfLastWord();
+        runTaskIsPalindrome();
     }
 
     public void runTaskTurnString() {
@@ -43,6 +42,15 @@ public class TaskRun {
     }
 
     public void runTaskIsPalindrome(){
-
-
+        System.out.println("// Определить, что строка является палиндромом\n" +
+                           "// Сложность по памяти O(1), не создавать новые String, StringBuilder\n" +
+                           "// Примеры:\n" +
+                           "// abc - false\n" +
+                           "// 112233 - false\n" +
+                           "// aba - true\n" +
+                           "// 112211 - true");
+        System.out.println(Homework.isPalindrome("abc"));
+        System.out.println(Homework.isPalindrome("112233"));
+        System.out.println(Homework.isPalindrome("aba"));
+        System.out.println(Homework.isPalindrome("112211"));
     }}

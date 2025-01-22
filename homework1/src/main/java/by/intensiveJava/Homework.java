@@ -51,6 +51,13 @@ public class Homework {
     // aba - true
     // 112211 - true
     public static boolean isPalindrome(String string) {
-        return false;
+        for (int i = 0, j = string.length() - 1; i < j; i++, j--) {
+            char charLeft = Character.toLowerCase(string.charAt(i));
+            char charRight = Character.toLowerCase(string.charAt(j));
+            if (charLeft != charRight) {
+                return false;
+            }
+        }
+        return true;
     }
 }
