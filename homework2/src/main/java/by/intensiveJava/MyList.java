@@ -31,7 +31,7 @@ public interface MyList<T> {
      *
      * @param index индекс удаляемого объекта.
      */
-    void remove(int index);
+    T remove(int index);
 
     /**
      * Удаляет все объекты из коллекции.
@@ -43,7 +43,7 @@ public interface MyList<T> {
      *
      * @param comparator компаратор описывающий правила сортировки массива.
      */
-    void sort(Comparator<T> comparator);
+    void sort(Comparator< ? super T> comparator);
 
     /**
      * Сортирует коллекцию методом быстрой сортировки на основании переданного компаратора.
