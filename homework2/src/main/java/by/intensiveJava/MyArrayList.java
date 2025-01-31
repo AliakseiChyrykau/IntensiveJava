@@ -119,6 +119,14 @@ public class MyArrayList<T> implements MyList<T>{
         quickSort(elements, low, high, comparator);
     }
 
+    /**
+     * Реализация метода быстрой сортировки.
+     *
+     * @param arr - массив в котором хранться елементы коллекции.
+     * @param low - индекс элемента, который является левой границей сортируемой области массива.
+     * @param high - индекс элемента, которы является правой границей сортируемой области массива.
+     * @param comparator - компаратор описывающий правила сортировки массива.
+     */
     private void quickSort(Object[] arr, int low, int high, Comparator<? super T> comparator) {
         if (low < high) {
             int pi = partition(arr, low, high, comparator);
@@ -128,6 +136,14 @@ public class MyArrayList<T> implements MyList<T>{
         }
     }
 
+    /**
+     * Вспомагательный метод для реализации быстрой сортировки.
+     * @param arr - массив в котором хранться елементы коллекции.
+     * @param low - индекс элемента, который является левой границей сортируемой области массива.
+     * @param high - индекс элемента, которы является правой границей сортируемой области массива.
+     * @param comparator - компаратор описывающий правила сортировки массива.
+     * @return
+     */
     private int partition(Object[] arr, int low, int high, Comparator<? super T> comparator) {
         int middle = low + (high - low) / 2;
         T pivot = (T) arr[middle];
